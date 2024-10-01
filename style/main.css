@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+:root {
+    --primary-color: #03A9F3;
+    --secondary-color: #D0EDFB;
+    --text-color: rgba(0, 0, 0, 80%);
+    --background-color: #DDDDDD;
+    --red-kind: #E11B22;
+    --yello-kind: #FFCA11;
+    --blue-kind: #0028EF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+main .banner {
+    width: 80%;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.login {
+    display: block;
+    padding: 2em;
+    width: 28%;
+}
+
+.login img {
+    display: block;
+    margin: 0 auto;
+}
+
+.login h1 {
+    text-align: center;
+}
+
+.login form {
+    margin: 4em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form input[type='text'],
+.login form input[type='password'] {
+    padding: 6px 5px;
+    margin-bottom: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5c5757;
+    font-size: 1em;
+    transition: border-bottom-color 0.3s ease-in;
+    color: #5c5757;
+}
+
+.login form input[type='text']:focus,
+.login form input[type='password']:focus {
+    border-bottom: 2px solid #0028EF;
+}
+
+.login form .remember {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 1em 0;
+    color: #5c5757;
+}
+
+.login form .remember .auto {
+    display: flex;
+    gap: 10px;
+}
+
+.login form .remember .auto input {
+    width: 1.4em;
+}
+
+.login form .remember span {
+    cursor: pointer;
+}
+
+.login form .remember span i {
+    font-size: 1.2em;
+}
+
+.login form input[type='button'] {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login form input[type='button']:hover {
+    padding: 10px;
+    background-color: rgba(3, 169, 243, 0.7);
+
+}
+
+.content {
+    background-color: var(--background-color);
+    display: flex;
+}
+
+.content .left {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 2.5em;
+
+}
+
+.left .icon-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.icon-btn button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.icon-btn button i {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.icon-btn button:hover {
+    background-color: #03A9F3;
+    color: white;
+}
+
+.click:focus {
+    background-color: #03A9F3;
+    color: white;
+}
+
+.content .right {
+    width: 100%;
+}
+
+.right .up-color {
+    background-color: rgba(3, 169, 243, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.up-color span {
+    margin: 10px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.up-color img {
+    height: 3em;
+}
+
+.right .up {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    padding: 1em;
+    color: #5c5757;
+}
+
+.right .up h2 {
+    font-size: 1.5em;
+}
+
+.right .up em {
+    color: rgba(225, 27, 34, 0.5);
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1.7em 1em;
+
+}
+
+.body .main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.body .main .item {
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.main .item .top-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main .item .top-item .item-right h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .item .top-item img {
+    height: 5em;
+}
+
+.main .item .top-item span {
+    font-weight: 500;
+}
+
+.main .item .top-item span:nth-child(2) {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.top-item .item-right {
+    display: flex;
+    gap: 1.5em;
+    color: #0028EF;
+    padding: 10px;
+
+}
+
+.item button {
+    padding: 8px 20px;
+    background-color: #03A9F3;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    float: right;
+    margin: 10px 0;
+}
+
+
+.item button:hover {
+    background-color: white;
+    color: #0028EF;
+    border: 2px solid #03A9F3;
+}
+
+.item p {
+    margin: 1.5em 0;
+    font-size: 18px;
+}
+
+.item h3 {
+    color: #5c5757;
+}
+
+.banner-home img {
+    height: 25em;
+}
+
+.voting {
+    background-color: white;
+}
+
+.candidate {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 10px;
+}
+
+.voting-items {
+    width: fit-content;
+    position: relative;
+}
+
+.voting-items .image-item {
+    position: relative;
+    border-top: 5px solid var(--red-kind);
+    border-left: 5px solid var(--yello-kind);
+    border-right: 5px solid var(--yello-kind);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 50%;
+    width: fit-content;
+}
+
+
+.image-item .input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    border-radius: 5px;
+    border: 2px solid #0028EF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.image-item .input:hover {
+    background-color: var(--yello-kind);
+}
+
+.image-item img {
+    width: 20em;
+    height: 100%;
+    object-fit: fill;
+}
+
+.image-item button {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(3, 169, 243, 0.5);
+    border-radius: 5px 5px 0 0;
+    border: none;
+    padding: 10px 0;
+    bottom: 0;
+    color: white;
+    display: block;
+    margin: auto 0;
+}
+
+.image-item button i {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.voting-items .info {
+    padding: 10px;
+}
+
+
+.voting-items .info h3 {
+    color: #5c5757;
+}
+
+.voting-items .info ul {
+    padding: 10px 16px;
+}
+
+.voting-items .info ul li {
+    color: #5c5757;
+    font-weight: 500;
+}
+
+.voting button:nth-child(2) {
+    padding: 10px 5em;
+    background-color: #03A9F3;
+    border: none;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 5em;
+    font-weight: 600;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.voting button:hover {
+    background-color: white;
+    border: 2px solid #03A9F3;
+    color: #5c5757;
+}
+
+
+/* presidential */
+
+.voting-items-president {
+    width: fit-content;
+    position: relative;
+}
+
+.ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+
+.ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+
+.ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#FFCA11 0%, #E11B22 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+}
+
+.ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #E11B22;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #E11B22;
+}
+
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #E11B22;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #E11B22;
+}
+
+.voting-items-president .image-item-president {
+    position: relative;
+    border-top: 5px solid var(--red-kind);
+    border-left: 5px solid var(--yello-kind);
+    border-right: 5px solid var(--yello-kind);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 50%;
+    width: fit-content;
+}
+
+
+.image-item-president .input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    border-radius: 5px;
+    border: 2px solid #0028EF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.image-item-president .input:hover {
+    background-color: var(--yello-kind);
+}
+
+.image-item-president img {
+    width: 20em;
+    height: 100%;
+    object-fit: fill;
+}
+
+.image-item-president button {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(3, 169, 243, 0.5);
+    border-radius: 5px 5px 0 0;
+    border: none;
+    padding: 10px 0;
+    bottom: 0;
+    color: white;
+    display: block;
+    margin: auto 0;
+}
+
+.image-item-president button i {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+.voting-items-president .info {
+    padding: 10px;
+}
+
+
+.voting-items-president .info h3 {
+    color: #5c5757;
+}
+
+.voting-items-president .info ul {
+    padding: 10px 16px;
+}
+
+.voting-items-president .info ul li {
+    color: #5c5757;
+    font-weight: 500;
+}
+
+#last-page {
+    background-color: #0028EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#last-page .uil-check-circle,#last-page p  {
+    font-size: 7rem;
+    color: #fff;
+}
+
+#voted {
+    color: #fff;
+    margin: 10px 0;
+}
+
+
+.voted-modal {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.voted-modal h3 {
+    margin: 0;
+}
+
+#voted-for {
+    font-weight: bold;
+    color: #0028EF;
+}
